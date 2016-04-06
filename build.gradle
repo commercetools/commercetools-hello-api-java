@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = "HelloApi"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def jvmSdkVersion = '1.0.0-RC4'
+    compile 'com.commercetools.sdk.jvm.core:commercetools-models:' + jvmSdkVersion
+    compile 'com.commercetools.sdk.jvm.core:commercetools-java-client:' + jvmSdkVersion
+    compile 'com.commercetools.sdk.jvm.core:commercetools-convenience:' + jvmSdkVersion
+}
