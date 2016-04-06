@@ -1,0 +1,34 @@
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{48} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- the default underlying http client of the JVM SDK -->
+    <logger name="org.asynchttpclient" level="INFO" />
+
+    <!-- async http clients underlying http/tcp library -->
+    <logger name="io.netty" level="INFO" />
+
+    <!-- base logger for all the endpoints of the commercetools platform -->
+    <logger name="sphere" level="INFO" />
+
+
+    <!-- if uncommented every detail of the product endpoint will be logged -->
+    <!--
+        <logger name="sphere.products" level="TRACE" />
+    -->
+
+    <!--
+        class logger for the commercetools http client abstraction layer class
+        in DEBUG it logs stuff like this:
+            14:20:04.946 [pool-3-thread-1] DEBUG io.sphere.sdk.http.HttpClient - POST https://auth.sphere.io/oauth/token
+        Be careful concerning the log level if you work with customer data since the url path can contain customer data like email addresses
+    -->
+    <logger name="io.sphere.sdk.http.HttpClient" level="INFO" />
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

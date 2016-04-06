@@ -31,7 +31,7 @@ public class HelloApi {
                     client.executeBlocking(searchRequest);
             for (final ProductProjection product : queryResult.getResults()) {
                 final String output = productProjectionToString(product);
-                System.out.println(output);
+                System.out.println("found product " + output);
             }
         }
     }
@@ -46,7 +46,7 @@ public class HelloApi {
                     return category.getName().find(ENGLISH).orElse("name unknown");
                 })
                 .collect(joining(", "));
-        return "found product " + name + " in categories " + categoryNamesString;
+        return name + " in categories " + categoryNamesString;
     }
 
     private static BlockingSphereClient createCommercetoolsClient() throws IOException {
