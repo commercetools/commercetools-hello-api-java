@@ -1,0 +1,5 @@
+language: java
+before_script: bash create-config-in-travis.sh
+script: ./gradlew run
+jdk:
+- oraclejdk8
