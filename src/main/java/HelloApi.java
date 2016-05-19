@@ -16,7 +16,7 @@ import static java.util.Locale.ENGLISH;
 import static java.util.stream.Collectors.joining;
 
 // This example uses the official Sphere Java client:
-// https://github.com/sphereio/sphere-jvm-sdk
+// https://github.com/commercetools/commercetools-jvm-sdk
 
 public class HelloApi {
     public static void main(String[] args) throws Exception {

@@ -1,7 +1,7 @@
-Java Hello on SPHERE.IO
-=======================
+Java Hello on commercetools platform
+====================================
 
-[![Build Status](https://travis-ci.org/sphereio/sphere-hello-api-java.png?branch=master)](https://travis-ci.org/sphereio/sphere-hello-api-java)
+[![Build Status](https://travis-ci.org/commercetools/commercetools-hello-api-java.png?branch=master)](https://travis-ci.org/commercetools/commercetools-hello-api-java)
 
 A Java example using Sphere Java Client to list products in your project.
 
