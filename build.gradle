@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    def jvmSdkVersion = '1.0.0-RC4'
+    def jvmSdkVersion = '1.0.0'
     compile 'com.commercetools.sdk.jvm.core:commercetools-models:' + jvmSdkVersion
     compile 'com.commercetools.sdk.jvm.core:commercetools-java-client:' + jvmSdkVersion
     compile 'com.commercetools.sdk.jvm.core:commercetools-convenience:' + jvmSdkVersion
